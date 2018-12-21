@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<meta charset="UTF-8">
+<style>canvas{ border: 1px solid black; }</style>
+<script>
+function main(){
+
+var canvas = document.getElementById("myCanvas");
+var c = canvas.getContext("2d");
+c.beginPath();
+c.arc( 320, 240, 100, 0, 2 * Math.PI, true );
+c.stroke();
+
+c.beginPath();
+c.arc( 320, 240, 30, 0, 2 * Math.PI, true );
+c.stroke();
+
+
+c.beginPath();
+c.arc( 320, 240, 20, 0, 2 * Math.PI, true );
+c.stroke();
+
+
+
+
+c.beginPath();
+c.moveTo( 220,240);
+c.lineTo(290,240);
+c.strokeStyle = "red";
+c.stroke();
+
+c.beginPath();
+c.moveTo( 350,240);
+c.lineTo(420,240);
+c.strokeStyle = "red";
+c.stroke();
+
+
+
+
+}
+
+
+
+</script>
+<body onload="main()">
+<canvas id="myCanvas" width="640" height="480">
+このブラウザは canvas 要素に対応していません。
+</canvas> 
